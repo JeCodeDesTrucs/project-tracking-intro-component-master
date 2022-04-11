@@ -5,35 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/app.js" defer></script>
   <title>Frontend Mentor | Project tracking intro component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  Product
-  Features
-  Pricing
-  Login
-
-  New
-  Monograph Dashboard
-
-  Powerful insights into your team
-  Project planning and time tracking for agile teams
-
-  Schedule a demo
-  to see a live preview
+  <header>
+    <nav id="main-navigation">
+      <a href="index.html" id="home-link"><img src="images/logo.svg" alt="Logo of the company"></a>
+      <ul id="navigation-list">
+        <li class="navigation-link"><a href="#">Product</a></li>
+        <li class="navigation-link"><a href="#">Features</a></li>
+        <li class="navigation-link"><a href="#">Pricing</a></li>
+        <li id="navigation-separator"></li>
+        <li class="navigation-link"><a href="#">Login</a></li>
+      </ul>
+      <button id="mobile-nav-btn"></button>
+    </nav>
+  </header>
+  <main>
+    <section id="hero">
+      <div id="right-col">
+        <img src="images/illustration-devices.svg" alt="Illustration of devices" id="hero-illustration">
+      </div>
+      <div id="left-col">
+        <p id="pre-title"><span>New</span>Monograph Dashboard</p>
+        <h1>Powerful insights into your team</h1>
+        <p>Project planning and time tracking for agile teams</p>
+        <div id="left-col__btn">
+          <button>Schedule a demo</button>
+          <p>to see a live preview</p>
+        </div>
+      </div>
+    </section>
+  </main>
   
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+    
 </body>
 </html>
