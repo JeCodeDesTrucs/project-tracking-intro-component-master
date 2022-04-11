@@ -1,0 +1,196 @@
+//Colors
+//Primary
+$red: hsl(0, 100%, 68%);
+
+//Neutral
+$very-dark-blue: hsl(230, 29%, 20%);
+$dark-grayish-blue: hsl(230, 11%, 40%);
+$grayish-blue: hsl(231, 7%, 65%);
+$light-grayish-blue: hsl(207, 33%, 95%);
+
+//Fonts
+$font-type1: 'Barlow Condensed', sans-serif;
+$font-type1-weight1: 400;
+$font-type1-weight2: 700;
+
+$font-type2: 'Barlow', sans-serif;
+$font-type2-weight1: 400;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body{
+    background-color: $light-grayish-blue;
+    overflow: hidden;
+    height: 100vh;
+}
+
+header{
+    z-index: 999;
+    width: 100%;
+    padding: 10vw;
+    #main-navigation{
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: calc(100vw - 20vw);
+    }
+}
+
+#home-link{
+
+    img{
+        width: 25px;
+        height: 25px;
+    }
+    
+}
+
+.navigation-list{
+    display: none;
+}
+
+.active-nav{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    top: 200%;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(black, .5);
+    border-radius: 5px;
+    .navigation-link{
+        text-align: center;
+        a{
+            text-decoration: none;
+            font-family: $font-type1;
+            color: $very-dark-blue;
+            font-weight: $font-type1-weight2;
+            text-transform: uppercase;
+            letter-spacing: .1rem;
+            font-size: 1.5rem;
+        }
+
+        &:last-of-type{
+            a{
+                color: $grayish-blue;
+            }
+        }
+    }
+
+    #navigation-separator{
+        height: 1px;
+        width: 100%;
+        background-color: $grayish-blue;
+    }
+}
+
+#mobile-nav-btn{
+    cursor: pointer;
+    width: 24px;
+    height: 20px;
+    background-image: url("../images/icon-hamburger.svg");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: none;
+}
+
+main{
+    height: 100%;
+}
+
+#hero{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10vw;
+    
+    align-items: center;
+    gap: 5rem;
+    #hero-illustration{
+        width: 122.5vw;
+    }
+    
+}
+
+#left-col{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+    #pre-title{
+        font-family: $font-type1;
+        font-weight: $font-type1-weight1;
+        text-transform: uppercase;
+        color: $grayish-blue;
+        letter-spacing: .25rem;
+        font-size: 1rem;
+        span{
+            background-color: $very-dark-blue;
+            color: $light-grayish-blue;
+            font-weight: $font-type1-weight2;
+            border-radius: 50px;
+            padding: .25rem 1rem;
+            letter-spacing: .1rem;
+            font-size: 1rem;
+            margin-right: 1rem;
+        }
+    }
+
+    h1{
+        font-family: $font-type1;
+        color: $very-dark-blue;
+        font-weight: $font-type1-weight2;
+        letter-spacing: .05rem;
+        text-transform: uppercase;
+        font-size: 2.25rem;
+    }
+
+    p{
+        font-family: $font-type2;
+        font-weight: $font-type2-weight1;
+        font-size: 1.25rem;
+        color: $dark-grayish-blue;
+        line-height: 1.75rem;
+    }
+
+    #left-col-btn{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        button{
+            cursor: pointer;
+            font-family: $font-type1;
+            background-color: $red;
+            color: $light-grayish-blue;
+            font-weight: $font-type1-weight2;
+            border: none;
+            border-radius: 5px;
+            padding: .75rem 1rem;
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+
+        p{
+            font-family: $font-type1;
+            font-weight: $font-type1-weight1;
+            text-transform: uppercase;
+            color: $grayish-blue;
+            letter-spacing: .1rem;
+            font-size: .85rem;
+        }
+    }
+}
+
+@media (min-width:800px) {
+    
+}
